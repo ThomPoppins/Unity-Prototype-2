@@ -13,6 +13,7 @@ public class MoveCookieForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Move the cookie forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }

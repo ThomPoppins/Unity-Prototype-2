@@ -5,7 +5,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     // Top boundary
     private float topBound = 35.0f;
     // Bottom boundary
-    private float lowerBound = -13.0f;
+    private float lowerBound = -10.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,7 @@ public class DestroyOutOfBounds : MonoBehaviour
         }
         else if (transform.position.z < lowerBound)
         {
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
     }
