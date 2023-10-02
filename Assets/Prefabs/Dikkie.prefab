@@ -461,6 +461,8 @@ GameObject:
   - component: {fileID: 3640287439460536403}
   - component: {fileID: 3640287440240301307}
   - component: {fileID: 2234590123416581128}
+  - component: {fileID: -8602420671609659507}
+  - component: {fileID: 6536096773016481755}
   m_Layer: 0
   m_Name: Dikkie
   m_TagString: Untagged
@@ -564,6 +566,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d02bdc471155314d9a70e00239250b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &-8602420671609659507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3640287439467881627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12686029, y: 0.19538493, z: 0.29476067}
+  m_Center: {x: 0.0006524801, y: 0.098329045, z: 0.036376454}
+--- !u!114 &6536096773016481755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3640287439467881627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8501001d7b3fb7544ac8629a2fe9f109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3640287439467882205
