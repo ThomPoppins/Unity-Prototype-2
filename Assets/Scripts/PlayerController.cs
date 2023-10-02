@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     // The default player speed
     public float speed = 10.0f;
     // The maximum distance the player can move left or right
-    public float xRange = 10.0f;
+    public float xRange = 15.0f;
     // The cookie prefab
     public GameObject cookiePrefab;
 
