@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    // The dog prefabs
     public GameObject[] dogPrefabs;
+    // The range to spawn the dogs
+    private float spawnRangeX = 20;
+    // The spawn position
+    private float spawnPosZ = 30;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +28,7 @@ public class SpawnManager : MonoBehaviour
             dogIndex = Random.Range(0, dogPrefabs.Length);
 
             // Random spawn position
-            Vector3 spawnPos = new Vector3(Random.Range(-15, 16), 0, 30);
+            Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX + 1), 0, spawnPosZ);
 
             // Spawn a dog
             Instantiate(dogPrefabs[dogIndex], spawnPos, dogPrefabs[dogIndex].transform.rotation);
