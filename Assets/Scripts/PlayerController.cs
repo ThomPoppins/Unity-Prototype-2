@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -24,11 +22,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Avoid the player moving off the screen
-        if(transform.position.x < -xRange)
+        if (transform.position.x < -xRange)
         {
             // If the player moves too far left, set the position to the left edge of the screen
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
-        } else if(transform.position.x > xRange)
+        }
+        else if (transform.position.x > xRange)
         {
             // If the player moves too far right, set the position to the right edge of the screen
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
@@ -41,7 +40,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
         // If the user presses the space key
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             // Launch a cookie from the player
             Instantiate(cookiePrefab, transform.position, cookiePrefab.transform.rotation);
