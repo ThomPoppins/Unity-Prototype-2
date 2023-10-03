@@ -5,7 +5,7 @@ public class SpawnManager : MonoBehaviour
     // The dog prefabs
     public GameObject[] dogPrefabs;
     // The range to spawn the dogs
-    private float spawnRangeX = 20;
+    public float spawnRangeX = 15;
     // The spawn position
     private float spawnPosZ = 30;
     // The spawn delay
