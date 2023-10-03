@@ -41,11 +41,10 @@ public class SpawnManager : MonoBehaviour
         int dogIndex;
         dogIndex = Random.Range(0, dogPrefabs.Length);
 
+        // Random origin for spawning a dog
         string origin = spawnOrigin[Random.Range(0, spawnOrigin.Length)];
 
-        Debug.Log(origin);
-
-        
+        // Spawn a dog from the top, left, or right
         if (origin == "top")
         {
             // Spawn a dog from the top:
@@ -54,7 +53,8 @@ public class SpawnManager : MonoBehaviour
 
             // Spawn a dog
             Instantiate(dogPrefabs[dogIndex], spawnPos, dogPrefabs[dogIndex].transform.rotation);
-        } else if (origin == "left")
+        }
+        else if (origin == "left")
         {
             // Spawn a dog from the left:
             // Random spawn position from the left on the X axis
@@ -65,7 +65,8 @@ public class SpawnManager : MonoBehaviour
 
             // Spawn a dog from the left
             Instantiate(dogPrefabs[dogIndex], spawnPos, spawnRotation);
-        } else if (origin == "right")
+        }
+        else if (origin == "right")
         {
             // Spawn a dog from the right:
             // Random spawn position from right on the X axis

@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     // The cookie prefab
     public GameObject cookiePrefab;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +52,7 @@ public class PlayerController : MonoBehaviour
 
         // Get the user's horizontal input from the input manager
         horizontalInput = Input.GetAxis("Horizontal"); // This is a value between -1 and 1
+
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
         // Get the user's vertical input from the input manager
