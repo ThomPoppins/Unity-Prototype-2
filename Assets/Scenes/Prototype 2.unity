@@ -500,6 +500,11 @@ MonoBehaviour:
   - {fileID: 3640287439467881627, guid: 5e06428778c0ece4aa20b7e36d18d5e0, type: 3}
   - {fileID: 6320030909424181856, guid: 0d62821ff25fd0d4f9bdd55e60f69bfd, type: 3}
   - {fileID: 6915897967046210908, guid: f2aca7b315178324e8643823f7a34da9, type: 3}
+  spawnRangeX: 15
+  spawnOrigin:
+  - left
+  - right
+  - top
 --- !u!4 &601550823
 Transform:
   m_ObjectHideFlags: 0
@@ -624,8 +629,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
+  verticalInput: 0
   speed: 25
-  xRange: 20
+  xRange: 15
+  zLowerBound: 0
+  zUpperBound: 15
   cookiePrefab: {fileID: 8207128879248975513, guid: c276cda8a4ddd16469bc637677e84cfe, type: 3}
 --- !u!1 &1590138454
 GameObject:
